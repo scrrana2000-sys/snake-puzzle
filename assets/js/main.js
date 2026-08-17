@@ -9,4 +9,19 @@ if(pw&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   });
   pw.addEventListener('mouseleave',()=>{pw.style.transform='rotateY(0deg) rotateX(0deg)'});
 }
+const trail=document.getElementById('trailPath');
+if(trail){
+  const len=trail.getTotalLength();
+  trail.style.strokeDasharray=String(len);
+  trail.style.strokeDashoffset=String(len);
+  trail.style.transition='stroke-dashoffset 1.4s cubic-bezier(.4,0,.2,1)';
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){trail.style.strokeDashoffset='0';}
+  else{
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(en=>{if(en.isIntersecting){trail.style.strokeDashoffset='0';io.unobserve(trail)}});
+    },{threshold:.4});
+    io.observe(trail);
+  }
+}
 });

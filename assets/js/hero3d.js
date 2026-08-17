@@ -40,8 +40,8 @@
     var helixPath = new HelixCurve();
     var tubeGeo = new THREE.TubeGeometry(helixPath, 220, 0.34, 14, false);
     var tubeMat = new THREE.MeshStandardMaterial({
-      color: 0x65df3f,
-      emissive: 0x0d3d17,
+      color: 0x6bff8f,
+      emissive: 0x123a20,
       metalness: 0.25,
       roughness: 0.35,
     });
@@ -51,7 +51,7 @@
     // Head
     var headGeo = new THREE.SphereGeometry(0.46, 24, 24);
     var headMat = new THREE.MeshStandardMaterial({
-      color: 0x8cf377,
+      color: 0xeafff0,
       emissive: 0x1a5c26,
       metalness: 0.3,
       roughness: 0.3,
@@ -66,9 +66,9 @@
     var cubeGeo = new THREE.BoxGeometry(0.42, 0.42, 0.42);
     for (var i = 0; i < 10; i++) {
       var mat = new THREE.MeshStandardMaterial({
-        color: i % 2 === 0 ? 0x65df3f : 0xdff8d7,
+        color: i % 2 === 0 ? 0x6bff8f : 0xff7a52,
         transparent: true,
-        opacity: 0.55,
+        opacity: 0.5,
         roughness: 0.5,
         metalness: 0.1,
       });
