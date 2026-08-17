@@ -1,0 +1,8 @@
+{
+  "name": "Snake Puzzle",
+  "short_name": "Snake Puzzle",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#65df3f",
+  "background_color": "#06110a"
+}

@@ -1,0 +1,3 @@
+# Snake Puzzle app-ads.txt
+# Replace ADMOB_PUBLISHER_ID_HERE with the real AdMob Publisher ID before production.
+google.com, ADMOB_PUBLISHER_ID_HERE, DIRECT, f08c47fec0942fa0
