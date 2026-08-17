@@ -9,14 +9,14 @@ This website uses **relative asset and internal-page paths**, so CSS, JavaScript
 
 ## Before production
 Replace:
-- `DEVELOPER_NAME_HERE`
-- `SUPPORT_EMAIL_HERE`
-- `PRIVACY_EMAIL_HERE`
+- `Siddhanth Singh`
+- `radhachawan01@gmail.com`
+- `radhachawan01@gmail.com`
 - `WEBSITE_URL_HERE`
 - `PLAY_STORE_URL_HERE`
 - AdMob placeholders in `assets/config.json`
 - `ADMOB_PUBLISHER_ID_HERE` in root `app-ads.txt`
-- `DATE_HERE`
+- `August 18, 2026`
 - Screenshot placeholders with real Snake Puzzle screenshots
 
 Keep this website dedicated only to Snake Puzzle.
